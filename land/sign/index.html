@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Access Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="auth-container">
+    <h1 id="form-title" class="auth-title">Sign In to Your Account</h1>
+    <p class="auth-subtitle">Your Gateway to Personalized Healthcare</p>
+    
+    <form id="auth-form" class="auth-form" action="/signin" method="POST">
+      <input 
+        type="text" 
+        name="username" 
+        id="username" 
+        placeholder="Username" 
+        class="auth-input" 
+        required
+      >
+      <input 
+        type="password" 
+        name="password" 
+        id="password" 
+        placeholder="Password" 
+        class="auth-input" 
+        required
+      >
+      <input 
+        type="password" 
+        name="confirm-password" 
+        id="confirm-password" 
+        placeholder="Confirm Password" 
+        class="auth-input hidden" 
+      >
+      <button type="submit" id="auth-btn" class="auth-button">
+        Sign In
+      </button>
+    </form>
+    
+    <p id="switch-text" class="switch-text">
+      Don't have an account? 
+      <span id="switch-link" class="highlight">Sign Up</span>
+    </p>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
+

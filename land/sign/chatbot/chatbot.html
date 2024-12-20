@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hygieia AI Chatbot</title>
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h1>Hygieia - Your Healthcare Assistant</h1>
+    </div>
+    <div class="chat-body" id="chat-body">
+      <div class="bot-message typing-indicator" id="typing-indicator">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="user-input" placeholder="Type a message..." />
+      <button id="send-btn">Send</button>
+      <button id="voice-btn">
+        <img src="images/voi2.png" alt="Voice Search" />
+      </button>
+</div>
+  </div>
+  <video class="video-background" autoplay loop muted>
+    <source src="images/hyback.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <script src="chatbot.js"></script>
+</body>
+</html>
+
+
